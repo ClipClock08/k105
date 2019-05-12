@@ -1,0 +1,2 @@
+class ScienceWork < ApplicationRecord
+end

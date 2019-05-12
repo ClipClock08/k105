@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  credits: 1.5
+  independent_work: 1.5
+  classroom_work: 1.5
+  program_files: MyString
+  synopsys_files: MyString
+  lab_files: MyString
+  contril_question_files: MyString
+
+two:
+  name: MyString
+  description: MyString
+  credits: 1.5
+  independent_work: 1.5
+  classroom_work: 1.5
+  program_files: MyString
+  synopsys_files: MyString
+  lab_files: MyString
+  contril_question_files: MyString
