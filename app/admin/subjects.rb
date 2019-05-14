@@ -12,6 +12,6 @@ ActiveAdmin.register Subject do
 #   permitted
 # end
 
-  permit_params :name, :description, :credits, :independent_work, :classroom_work, :program_files, :synopsis_files, :lab_files, :control_question_files
+  permit_params :name, :description, :credits, :independent_work, :classroom_work, :program_files, :synopsis_files, :lab_files, :control_question_files, :teacher_id
 
 end

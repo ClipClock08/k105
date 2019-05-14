@@ -12,6 +12,6 @@ ActiveAdmin.register ScienceWork do
 #   permitted
 # end
 
-  permit_params :photo, :name, :description
+  permit_params :photo, :name, :description, :teacher_id
 
 end
