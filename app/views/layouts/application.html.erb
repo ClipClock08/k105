@@ -10,14 +10,11 @@
     <%#my styles %>
     <%= stylesheet_link_tag 'carousel' %>
     <%= stylesheet_link_tag 'main' %>
-    <%= javascript_include_tag 'js'%>
-    <%= javascript_include_tag 'functions'%>
-    <%= javascript_include_tag 'plugins'%>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   </head>
 
   <body>
-  <%= render 'layouts/header2' %>
+  <%= render 'layouts/header' %>
 
   <main role="main">
     <%= yield %>
