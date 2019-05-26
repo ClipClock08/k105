@@ -67,3 +67,6 @@ gem 'activeadmin'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'simple_form'
+#for images
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"

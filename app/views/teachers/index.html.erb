@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <% @teachers.each do |t| %>
+      <div class="col-lg-4">
+        <div class="card" style="width: 18rem; margin: 10px 0;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= t.lastname + ' ' + t.name + ' ' + t.patronymic %></h5>
+            <p class="card-text"><%= t.position %></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

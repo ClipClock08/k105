@@ -16,6 +16,7 @@
 ## Running commands in container
 - `docker-compose run --rm web rails c`
 - `docker-compose run --rm web rails db:migrate`
+- `docker-compose run --rm web rails db:seed`
 - `docker attach k105_web_1` - attach to container for debug
 - `docker-compose logs --tail="200" web` - view logs for container
 
