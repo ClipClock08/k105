@@ -1,18 +1,21 @@
 <% i = 0 %>
-<% @educ_prog.each do |e|%>
-<hr class="featurette-divider">
+<% @educ_prog.each do |e| %>
+  <hr class="featurette-divider">
 
-<div class="row featurette">
-  <div class="col-md-7 <%= i % 2 != 0?  "order-md-2" : "" %>">
-    <h2 class="featurette-heading"><%= e.name %> <span class="text-muted"><%= I18n.t('short.tech_engineering'+i.to_s) %></span></h2>
-    <p class="lead"><%= e.description %></p>
+  <div class="row featurette">
+    <div class="col-md-7 <%= i % 2 != 0 ? "order-md-2" : "" %>">
+      <h2 class="featurette-heading"><%= e.name %>
+        <span class="text-muted"><%= I18n.t('short.tech_engineering' + i.to_s) %></span></h2>
+      <p class="lead"><%= e.description %></p>
+    </div>
+    <div class="col-md-5 <%= i % 2 != 0 ? "order-md-1" : "" %>">
+      <% if e.image.present? %>
+        <%= image_tag e.image, :class => 'featurette-image img-fluid mx-auto', :alt => 'Generic placeholder image' %>
+      <% end %>
+    </div>
   </div>
-  <div class="col-md-5 <%= i % 2 != 0?  "order-md-1" : "" %>">
-    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-  </div>
-</div>
 
 
   <% i = i +1 %>
-  <% end %>
+<% end %>
 <hr class="featurette-divider">

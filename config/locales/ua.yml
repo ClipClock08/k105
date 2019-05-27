@@ -281,3 +281,10 @@ uk:
     tech_engineering0: '(Visual Studio, SolidWorks, Matlab, Java, C#.NET, MySQL та інше)'
     tech_engineering1: '(Міждисциплінарна методологія побудови інтелектуальних середовищ і т.п.)'
     tech_engineering2: '(VR, UnrealEngine, Unity, C#, Visual Studio, Java, NodeJs та інше)'
+
+  teacher:
+    position: 'Позиція'
+    rank: 'Ранг'
+    degree: 'Вчене звання'
+    discipline: 'Предмети'
+    science_work: 'Наукова діяльність'

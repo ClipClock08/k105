@@ -1,11 +1,13 @@
 <div class="row">
-    <% @specializations.each do |s| %>
-      <div class="col-lg-4">
-        <img class="rounded-top" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="auto" height="300">
-        <h2><%= s.name %></h2>
-        <p><%= s.description %></p>
-        <%= link_to I18n.t('more'), specialty_path(s), :class => 'btn btn-primary' %>
-      </div>
-    <% end %>
+  <% @specializations.each do |s| %>
+    <div class="col-lg-4">
+      <% if s.image.present? %>
+        <%= image_tag s.image, :class => 'rounded-top', :alt => 'Generic placeholder image', :width => 'auto', :height => '200' %>
+      <% end %>
+      <h2><%= s.name %></h2>
+      <p><%= s.description %></p>
+      <%= link_to I18n.t('more'), specialty_path(s), :class => 'btn btn-primary' %>
+    </div>
+  <% end %>
 
 </div>

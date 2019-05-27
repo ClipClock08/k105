@@ -1,19 +1,18 @@
 <div class="container" style="margin: 10px;">
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="<%= @teacher.photo %>" class="card-img-top" alt="<%= @teacher.photo %>">
       <div class="card-body">
-        <h5 class="card-title"><% @teacher.name %></h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
+        <h5 class="card-title"><%= @teacher.lastname + ' ' + @teacher.name + ' ' + @teacher.patronymic %></h5>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item"><%= I18n.t('teacher.position') %>: <%= @teacher.position %></li>
+        <li class="list-group-item"><%= I18n.t('teacher.rank') %>: <%= @teacher.rank %></li>
+        <li class="list-group-item"><%= I18n.t('teacher.degree') %>: <%= @teacher.degree %></li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <%= link_to I18n.t('teacher.discipline'), subjects_path, :class => 'card-link' %>
+        <%= link_to I18n.t('teacher.science_work'), science_works_path, :class => 'card-link' %>
       </div>
     </div>
+  <%= link_to t('common.back'), :back, :class => 'btn btn-outline-secondary' %>
 </div>

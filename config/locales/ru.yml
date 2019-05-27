@@ -283,3 +283,10 @@ ru:
     tech_engineering0: '(Visual Studio, SolidWorks, Matlab, Java, C#.NET, MySQL и другие)'
     tech_engineering1: '(Междисциплинарная методология построения интеллектуальных сред и т.п.)'
     tech_engineering2: '(VR, UnrealEngine, Unity, C#, Visual Studio, Java, NodeJs и другое)'
+
+  teacher:
+    position: 'Позиция'
+    rank: 'Ранг'
+    degree: 'Ученая степень'
+    discipline: 'Предметы'
+    science_work: 'Научная деятельность'

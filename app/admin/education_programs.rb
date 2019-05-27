@@ -12,6 +12,6 @@ ActiveAdmin.register EducationProgram do
 #   permitted
 # end
 
-  permit_params :name, :description, :specialty_id
+  permit_params :name, :description, :specialty_id, :image
 
 end

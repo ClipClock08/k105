@@ -12,6 +12,6 @@ ActiveAdmin.register Specialty do
 #   permitted
 # end
 
-  permit_params :name, :description
+  permit_params :name, :description, :image
 
 end

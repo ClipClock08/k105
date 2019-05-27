@@ -12,6 +12,10 @@ ActiveAdmin.register Teacher do
 #   permitted
 # end
 
+  # mount_uploader :photo, ImageUploader
+
   permit_params :name, :lastname, :patronymic, :photo, :position, :rank, :degree
+
+
 
 end
