@@ -2,7 +2,8 @@
   <div class="row">
 
     <div class="col-lg-4">
-      <img class="rounded-top" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="auto" height="300">
+      <%= image_tag @specialty.image.url, :class => 'rounded-top', :width => 'auto', :height => '300' if @specialty.image? %>
+
       <h2><%= @specialty.name %></h2>
       <p><%= @specialty.description %></p>
     </div><!-- /.col-lg-4 -->
