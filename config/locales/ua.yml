@@ -267,6 +267,8 @@ uk:
   title: 'К105'
   more: 'Детальніше'
   main: 'Головна'
+  about: 'Про нас'
+  pages: 'Сторінки'
   specialization: 'Спеціалізації'
   comp-science: "Комп'ютерні науки"
   inform-syst: 'Інформаційні системи та технології'
@@ -274,6 +276,7 @@ uk:
   disciplines: 'Дисципліни'
   teachers: 'Вчителі'
   news: 'Новини'
+  science_works: 'Наукова робота'
   contacts: 'Контакти'
   common:
     back: 'Назад'
@@ -288,3 +291,4 @@ uk:
     degree: 'Вчене звання'
     discipline: 'Предмети'
     science_work: 'Наукова діяльність'
+  few_word_about: 'Кілька слів про нас'

@@ -5,6 +5,7 @@ class WelcomeController < ApplicationController
 
     @educ_prog = EducationProgram.all
 
+    @teachers = Teacher.all
 
   end
 

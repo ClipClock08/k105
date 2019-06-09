@@ -1,35 +1,142 @@
-<!-- Footer -->
+<!-- Page Footer-->
+<footer class="section footer-advanced bg-gray-800">
+  <div class="footer-advanced-main">
+    <div class="container">
+      <div class="row row-50">
+        <div class="col-lg-4">
+          <h4><%= I18n.t('about') %></h4>
+          <p class="footer-advanced-text">Наш університет пропонує високоякісну освіту для студентів України та інших
+            країн. Наша мета полягає в тому, щоб підтримати наших студентів, оскільки вони стають дуже працездатними,
+            творчими і культурно багатими випускниками, здатними знайти роботу, яка дозволить їм змінити світ на
+            краще.</p>
+        </div>
+        <div class="col-sm-7 col-md-5 col-lg-4">
+
+        </div>
+        <div class="col-sm-5 col-md-7 col-lg-4">
+          <h4>Галерея</h4>
+          <div class="row row-x-10" data-lightgallery="group">
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+            <div class="col-3 col-sm-4 col-md-3">
+              <a class="thumbnail-minimal" href="images/footer_gallery.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery85x85.jpg" alt="">
+                <div class="thumbnail-minimal-caption"></div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-advanced-aside">
+    <div class="container">
+      <div class="footer-advanced-layout">
+        <div>
+          <ul class="list-nav">
+            <li>
+            <li class="rd-nav-item active"><%= link_to I18n.t('main'), root_path %></li>
+            <li><%= link_to I18n.t('about'), root_path %></li>
+            <li><%= link_to I18n.t('science_works'), root_path %></li>
+
+            <li><a href="#contacts-info"><%= I18n.t('contacts') %></a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="list-inline list-inline-md">
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook.png"></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/google-plus-squared.png"></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/linkedin.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr>
+  </div>
+  <div class="footer-advanced-aside">
+    <div class="container">
+      <div class="footer-advanced-layout">
+        <a class="brand" href="index.html"><img src="images/logo-inverse-small-230x43.png" alt="" width="230" height="43" srcset="images/1200px-Эмблема_ХАИ.png 2x"/></a>
+        <!-- Rights-->
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Всі права захищені</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Умовами
+          користування</a><span> та</span><span>&nbsp;</span><a href="#">Політикою
+          конфіденційності</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<!--<div class="preloader">
+  <div class="preloader-logo"><img src="images/1200px-Эмблема_ХАИ.png" alt="" width="317" height="71" srcset="images/logo-default-551x124.png 2x"/>
+  </div>
+  <div class="preloader-body">
+    <div id="loadingProgressG">
+      <div class="loadingProgressG" id="loadingProgressG_1"></div>
+    </div>
+  </div>
+</div>-->
+<!-- Global Mailform Output-->
+<div class="snackbars" id="form-output-global"></div>
+<!-- Footer
 <section id="footer">
   <div class="container">
     <div class="row text-center text-xs-center text-sm-left text-md-left">
       <div class="col-xs-12 col-sm-4 col-md-3">
-        <h5><%= I18n.t('title') %></h5>
+        <h5><%#= I18n.t('title') %></h5>
         <ul class="list-unstyled quick-links">
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('main'), root_path, :title => I18n.t('main'), :class => '' %></i></li>
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('news'), :title => I18n.t('news'), :class => '' %></i></li>
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('contacts'), :class => '' %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('main'), root_path, :title => I18n.t('main'), :class => '' %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('news'), :title => I18n.t('news'), :class => '' %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('contacts'), :class => '' %></i></li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
-        <h5><%= link_to I18n.t('specialization'), specialties_path %></h5>
+        <h5><%#= link_to I18n.t('specialization'), specialties_path %></h5>
         <ul class="list-unstyled quick-links">
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('comp-science'), specialty_path(1), :class => "" %></i></li>
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('inform-syst'), specialty_path(2), :class => "" %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('comp-science'), specialty_path(1), :class => "" %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('inform-syst'), specialty_path(2), :class => "" %></i></li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
-        <h5><%= link_to I18n.t('specialty'), education_programs_path %></h5>
+        <h5><%#= link_to I18n.t('specialty'), education_programs_path %></h5>
         <ul class="list-unstyled quick-links">
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('simple_form.required.mark'), :class => '' %></i></li>
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('simple_form.required.text'), specialty_path(2), :class => "" %></i></li>
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('simple_form.required.mark'), specialty_path(2), :class => "" %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('simple_form.required.mark'), :class => '' %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('simple_form.required.text'), specialty_path(2), :class => "" %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('simple_form.required.mark'), specialty_path(2), :class => "" %></i></li>
           <li><a href="#" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
-        <h5><%= I18n.t('disciplines') %></h5>
+        <h5><%#= I18n.t('disciplines') %></h5>
         <ul class="list-unstyled quick-links">
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('contacts'), :class => '' %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('contacts'), :class => '' %></i></li>
           <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
           <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
           <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
@@ -37,9 +144,9 @@
         </ul>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-3">
-        <h5><%= I18n.t('teachers') %></h5>
+        <h5><%#= I18n.t('teachers') %></h5>
         <ul class="list-unstyled quick-links">
-          <li><i class="fa fa-angle-double-right"><%= link_to I18n.t('contacts'), :class => '' %></i></li>
+          <li><i class="fa fa-angle-double-right"><%#= link_to I18n.t('contacts'), :class => '' %></i></li>
           <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
           <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
           <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
@@ -68,4 +175,4 @@
     </div>
   </div>
 </section>
-<!-- ./Footer -->
+./Footer -->

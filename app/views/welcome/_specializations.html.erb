@@ -1,13 +1,26 @@
-<div class="row">
-  <% @specializations.each do |s| %>
-    <div class="col-lg-4">
-      <% if s.image.present? %>
-        <%= image_tag s.image, :class => 'rounded-top', :alt => 'Generic placeholder image', :width => 'auto', :height => '200' %>
+<section class="section-lg text-center">
+  <div class="container">
+    <h3 class="wow-outer"><span class="wow slideInUp">Наші Освітні Програми</span></h3>
+    <p class="wow-outer">
+      <span class="wow slideInDown text-width-1">Ці курси вибираються через суворий процес і однозначно створюються для кожного семестру, щоб зробити ваше навчання більш комфортним і універсальним з року в рік.</span>
+    </p>
+    <div class="row row-30 offset-top-2">
+      <% @educ_prog.each do |e| %>
+        <% if e.present? %>
+          <div class="col-sm-6 col-lg-3 wow-outer">
+            <!-- Thumbnail Light-->
+            <article class="thumbnail-light wow slideInLeft">
+              <a class="thumbnail-light-media" href="<%= education_program_path(e) %>">
+                <%= image_tag(e.image.url, alt: 'Image') if e.image? %>
+              </a>
+              <h5 class="thumbnail-light-title"><a href="<%= education_program_path(e) %>"><%= e.name %></a></h5>
+            </article>
+          </div>
+        <% end %>
       <% end %>
-      <h2><%= s.name %></h2>
-      <p><%= s.description %></p>
-      <%= link_to I18n.t('more'), specialty_path(s), :class => 'btn btn-primary' %>
     </div>
-  <% end %>
-
-</div>
+  </div>
+  <div class="wow-outer button-outer">
+    <%= link_to I18n.t('more'), education_programs_path, :class => 'button button-primary-outline button-winona offset-top-2 wow slideInUp' %>
+  </div>
+</section>

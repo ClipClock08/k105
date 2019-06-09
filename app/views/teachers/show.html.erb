@@ -1,18 +1,18 @@
-<div class="container" style="margin: 10px;">
-    <div class="card" style="width: 18rem;">
-      <img src="<%= @teacher.photo %>" class="card-img-top" alt="<%= @teacher.photo %>">
-      <div class="card-body">
-        <h5 class="card-title"><%= @teacher.lastname + ' ' + @teacher.name + ' ' + @teacher.patronymic %></h5>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><%= I18n.t('teacher.position') %>: <%= @teacher.position %></li>
-        <li class="list-group-item"><%= I18n.t('teacher.rank') %>: <%= @teacher.rank %></li>
-        <li class="list-group-item"><%= I18n.t('teacher.degree') %>: <%= @teacher.degree %></li>
-      </ul>
-      <div class="card-body">
-        <%= link_to I18n.t('teacher.discipline'), subjects_path, :class => 'card-link' %>
-        <%= link_to I18n.t('teacher.science_work'), science_works_path, :class => 'card-link' %>
-      </div>
+<div class="container">
+  <div class="card">
+    <img src="<%= @teacher.photo %>" class="card-img-top" alt="<%= @teacher.photo %>" width="400px" height="350px">
+    <div class="card-body">
+      <h5 class="card-title"><%= @teacher.lastname + ' ' + @teacher.name + ' ' + @teacher.patronymic %></h5>
     </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%= I18n.t('teacher.position') %>: <%= @teacher.position %></li>
+      <li class="list-group-item"><%= I18n.t('teacher.rank') %>: <%= @teacher.rank %></li>
+      <li class="list-group-item"><%= I18n.t('teacher.degree') %>: <%= @teacher.degree %></li>
+    </ul>
+    <div class="card-body">
+      <%= link_to I18n.t('teacher.discipline'), subjects_path, :class => 'card-link' %>
+      <%= link_to I18n.t('teacher.science_work'), science_works_path, :class => 'card-link' %>
+    </div>
+  </div>
   <%= link_to t('common.back'), :back, :class => 'btn btn-outline-secondary' %>
 </div>

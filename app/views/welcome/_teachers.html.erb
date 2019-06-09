@@ -1,0 +1,30 @@
+<section class="section section-lg bg-gray-100 text-center">
+  <div class="container">
+    <h3 class="wow-outer text-center"><span class="wow slideInDown">Наші викладачі</span></h3>
+    <div class="row row-50">
+      <% if @teachers %>
+        <% i = 0 %>
+        <% @teachers.each do |t| %>
+          <% i += 1 %>
+          <% if i > 3 then
+               break
+             end %>
+          <div class="col-sm-6 col-lg-4 wow-outer">
+            <!-- Profile Minimal-->
+            <article class="profile-simple wow slideInLeft">
+              <a class="thumbnail-light-media" href="<%= teacher_path(t) %>">
+                <%= image_tag(t.photo.url, alt: 'Image', :class => 'profile-simple-image', :width => '370', :height => '368') if t.photo? %>
+              </a>
+              <h4 class="profile-simple-title"><%= t.lastname + ' ' + t.name + ' ' + t.patronymic %></h4>
+              <p class="profile-simple-position"><%= t.position %></p>
+            </article>
+          </div>
+        <% end %>
+      <% end %>
+
+    </div>
+    <div class="wow-outer button-outer">
+      <%= link_to I18n.t('more'), teachers_path, :class => 'button button-primary-outline button-winona offset-top-2 wow slideInUp' %>
+    </div>
+  </div>
+</section>
